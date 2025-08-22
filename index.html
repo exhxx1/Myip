@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ما هو عنوان IP الخاص بي؟ | معلومات IP ومزود الخدمة</title>
-    <meta name="description" content="اكتشف عنوان IP الخاص بك، ومزود الخدمة، والموقع الجغرافي، ونوع الجهاز. أداة بسيطة وسريعة لمعرفة تفاصيل اتصالك بالإنترنت.">
+    <title>What Is My IP Address? | IP Lookup & Location</title>
+    <meta name="description" content="Find out your public IP address, ISP, location, and device type. A fast and free tool to check your internet connection details.">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta property="og:title" content="What Is My IP Address? | IP Lookup Tool">
+    <meta property="og:description" content="Instantly check your IP address, ISP, location, and device type with our free online tool.">
+    <meta property="og:url" content="YOUR_SITE_URL_HERE">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/images/ip-preview.png"> <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
         body {
-            font-family: 'Cairo', sans-serif;
-            background-color: #f0f4f8; /* لون خلفية فاتح */
+            font-family: sans-serif;
+            background-color: #f0f4f8;
             color: #334155;
         }
     </style>
@@ -20,34 +23,33 @@
 <body class="flex flex-col items-center justify-center min-h-screen p-4">
 
     <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 w-full max-w-2xl text-center animate-fade-in">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">ما هو عنوان IP الخاص بي؟</h1>
-        <p class="text-lg md:text-xl text-gray-600 mb-8">اعثر على معلومات اتصالك بالإنترنت بسرعة.</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">What Is My IP Address?</h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-8">Quickly find your internet connection details.</p>
 
         <div id="info-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="bg-gray-50 rounded-lg p-6 flex flex-col items-center">
                 <i class="fas fa-network-wired text-4xl text-blue-500 mb-3"></i>
-                <h3 class="text-xl font-semibold mb-2">عنوان IP</h3>
+                <h3 class="text-xl font-semibold mb-2">IP Address</h3>
                 <span id="ip-address" class="text-3xl font-bold text-gray-800">...</span>
             </div>
             <div class="bg-gray-50 rounded-lg p-6 flex flex-col items-center">
                 <i class="fas fa-server text-4xl text-purple-500 mb-3"></i>
-                <h3 class="text-xl font-semibold mb-2">مزود الخدمة</h3>
+                <h3 class="text-xl font-semibold mb-2">ISP</h3>
                 <span id="isp" class="text-xl font-semibold text-gray-700">...</span>
             </div>
             <div class="bg-gray-50 rounded-lg p-6 flex flex-col items-center">
                 <i class="fas fa-location-dot text-4xl text-green-500 mb-3"></i>
-                <h3 class="text-xl font-semibold mb-2">الموقع الجغرافي</h3>
+                <h3 class="text-xl font-semibold mb-2">Location</h3>
                 <span id="location" class="text-xl font-semibold text-gray-700">...</span>
             </div>
             <div class="bg-gray-50 rounded-lg p-6 flex flex-col items-center">
                 <i class="fas fa-desktop text-4xl text-orange-500 mb-3"></i>
-                <h3 class="text-xl font-semibold mb-2">نوع الجهاز</h3>
+                <h3 class="text-xl font-semibold mb-2">Device Type</h3>
                 <span id="device" class="text-xl font-semibold text-gray-700">...</span>
             </div>
         </div>
-
         <button id="copy-button" class="mt-8 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">
-            <i class="fas fa-copy ml-2"></i> انسخ عنوان IP
+            <i class="fas fa-copy mr-2"></i> Copy IP Address
         </button>
     </div>
 
