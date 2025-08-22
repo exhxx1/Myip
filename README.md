@@ -30,7 +30,7 @@ This project is open-source, and contributions are welcome! If you have any sugg
 
 ## ✍️ Author
 
-* **Developed by:** [Your Name or GitHub Username]
+* **Developed by:** **Mohammad Adnan**
 * **Contact:** For support and more projects, follow my Telegram channel: **@exhxx**
 
 ## 📝 License
